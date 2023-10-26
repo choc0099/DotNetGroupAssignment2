@@ -1,0 +1,2 @@
+100,190m,20,Window,Wi-Fi,TV,$120,No smoking allowed.
+200,120m,20,Rainforest,Wi-Fi,TV,$90,No Pets allowed

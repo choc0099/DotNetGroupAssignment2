@@ -1,0 +1,4 @@
+admin,admin
+saoban,1234
+chris012,12345
+receptionist,admin

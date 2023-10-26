@@ -1,0 +1,16 @@
+Room ID: 100
+Room Size: 190
+Bed Size:20
+Sight: Window
+Features: TV, Wi-Fi
+Price: $120
+Additional Info: No smoking allowed.
+
+Room ID: 200
+Room Size: 120
+Bed Size:20
+Sight: Rainforest
+Features: TV, Wi-Fi
+Price: $90
+Additional Info: No Pets allowed
+

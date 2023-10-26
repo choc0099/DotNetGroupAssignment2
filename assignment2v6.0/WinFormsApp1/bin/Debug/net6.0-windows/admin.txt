@@ -1,0 +1,6 @@
+Name: admin admin
+Email: admin@gmail.com
+Phone: 0412345678
+Address: 123 admin st admin city Queensland
+Date of Birth: 19-10-2023
+Role: Admin

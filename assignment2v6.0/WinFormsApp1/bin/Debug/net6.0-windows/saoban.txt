@@ -1,0 +1,6 @@
+Name: Saoban Habib
+Email: saoban.habib@gmail.com
+Phone: 1234567890
+Address: 12 fedrick st, sydney Sydney NSW
+Date of Birth: 01-02-2000
+Role: Customer

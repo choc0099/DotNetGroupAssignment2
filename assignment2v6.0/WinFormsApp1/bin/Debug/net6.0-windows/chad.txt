@@ -1,0 +1,6 @@
+Name: Chad Chad
+Email: c@c.com
+Phone: 0222991
+Address: 99 Sydney NSW
+Date of Birth: 22-10-2023
+Role: Customer
