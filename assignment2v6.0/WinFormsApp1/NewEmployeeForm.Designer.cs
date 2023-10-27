@@ -47,8 +47,6 @@
             passTxtBox = new TextBox();
             userTxtBox = new TextBox();
             usernameLbl = new Label();
-            employeeTypeBox = new ComboBox();
-            label9 = new Label();
             stateComboBox = new ComboBox();
             label11 = new Label();
             label10 = new Label();
@@ -103,7 +101,7 @@
             // 
             // SubmitBtn
             // 
-            SubmitBtn.Location = new Point(594, 597);
+            SubmitBtn.Location = new Point(594, 567);
             SubmitBtn.Margin = new Padding(4, 5, 4, 5);
             SubmitBtn.Name = "SubmitBtn";
             SubmitBtn.Size = new Size(100, 35);
@@ -114,7 +112,7 @@
             // 
             // CancelBtn
             // 
-            CancelBtn.Location = new Point(385, 597);
+            CancelBtn.Location = new Point(385, 567);
             CancelBtn.Margin = new Padding(4, 5, 4, 5);
             CancelBtn.Name = "CancelBtn";
             CancelBtn.Size = new Size(100, 35);
@@ -139,7 +137,7 @@
             // 
             dobPicker.CustomFormat = "dd-MM-yyyy";
             dobPicker.Format = DateTimePickerFormat.Custom;
-            dobPicker.Location = new Point(385, 550);
+            dobPicker.Location = new Point(385, 505);
             dobPicker.Margin = new Padding(4, 5, 4, 5);
             dobPicker.Name = "dobPicker";
             dobPicker.Size = new Size(309, 27);
@@ -150,7 +148,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(209, 555);
+            label5.Location = new Point(209, 510);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(110, 20);
@@ -229,7 +227,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(208, 149);
+            label1.Location = new Point(209, 153);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(88, 20);
@@ -269,27 +267,6 @@
             usernameLbl.TabIndex = 39;
             usernameLbl.Text = "Username:";
             usernameLbl.Click += usernameLbl_Click;
-            // 
-            // employeeTypeBox
-            // 
-            employeeTypeBox.FormattingEnabled = true;
-            employeeTypeBox.Items.AddRange(new object[] { "Employee", "Receptionist" });
-            employeeTypeBox.Location = new Point(385, 510);
-            employeeTypeBox.Name = "employeeTypeBox";
-            employeeTypeBox.Size = new Size(309, 28);
-            employeeTypeBox.TabIndex = 51;
-            employeeTypeBox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(209, 513);
-            label9.Margin = new Padding(4, 0, 4, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(128, 20);
-            label9.TabIndex = 59;
-            label9.Text = "Employee Type:";
             // 
             // stateComboBox
             // 
@@ -358,15 +335,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(902, 685);
+            ClientSize = new Size(902, 645);
             Controls.Add(stateComboBox);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(cityTxtBox);
             Controls.Add(label12);
             Controls.Add(addressTxtBox);
-            Controls.Add(label9);
-            Controls.Add(employeeTypeBox);
             Controls.Add(label8);
             Controls.Add(surnameTxtBox);
             Controls.Add(label6);
@@ -415,8 +390,6 @@
         private TextBox passTxtBox;
         private TextBox userTxtBox;
         private Label usernameLbl;
-        private ComboBox employeeTypeBox;
-        private Label label9;
         private ComboBox stateComboBox;
         private Label label11;
         private Label label10;

@@ -104,7 +104,7 @@ namespace assignment2
             {
                 string address = addressTxtBox.Text + " " + cityTxtBox.Text + " " + stateComboBox.Text;
                 User user = new User(userTxtBox.Text, passTxtBox.Text, fNameTxtBox.Text, surnameTxtBox.Text, emailTxtBox.Text, phoneTxtBox.Text, address, dobPicker.Text);
-                string userInfo = (fNameTxtBox.Text + " " + surnameTxtBox.Text + "|" + emailTxtBox.Text + "|" + phoneTxtBox.Text + "|" + address + "|" + dobPicker.Text + "|Role: " + employeeTypeBox.Text);
+                string userInfo = (fNameTxtBox.Text + " " + surnameTxtBox.Text + "|" + emailTxtBox.Text + "|" + phoneTxtBox.Text + "|" + address + "|" + dobPicker.Text + "|Role: Receptionist");
                 MessageBox.Show("Account has been created.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 File.AppendAllText("employeeDB.txt", fNameTxtBox.Text + " " + surnameTxtBox.Text + "\n");
                 File.WriteAllText(userTxtBox.Text + ".txt", userInfo);
