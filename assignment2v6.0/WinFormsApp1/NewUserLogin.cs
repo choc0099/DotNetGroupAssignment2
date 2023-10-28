@@ -43,9 +43,22 @@ namespace assignment2
                 MessageBox.Show("Email cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return false;
             }
+
+            else if (!emailTxtBox.Text.Contains("@gmail.com") && !emailTxtBox.Text.Contains("outlook.com") && !emailTxtBox.Text.Contains("@uts.edu.au"))
+            {
+                MessageBox.Show("Invalid email.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return false;
+            }
+
             else if (String.IsNullOrEmpty(phoneTxtBox.Text))
             {
                 MessageBox.Show("Phone number cannot be empty.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return false;
+            }
+
+            else if ((phoneTxtBox.Text).Length < 10)
+            {
+                MessageBox.Show("Invalid phone number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return false;
             }
 
