@@ -31,11 +31,19 @@ namespace assignment2
         private void OpenBtn_Click(object sender, EventArgs e)
         {
             richTextBox1.Clear();
-            var fileLocation = File.ReadAllLines("dishDisplay.txt");
+            var fileLocation = File.ReadAllLines("dishDisplay.txt");           
             List<string> lines = new List<string>(fileLocation);
-            for (int i = 0; i < lines.Count; i++)
+            List<string> dishInfo = new List<string>();
+            dishInfo = File.ReadAllLines("dishDisplay.txt").ToList();
+            foreach (var line in dishInfo)
             {
-                richTextBox1.AppendText(lines[i] + "\n");
+                string[] dishSplit = line.Split(',');
+                richTextBox1.AppendText("Dish: " + dishSplit[0] + "\n");
+                richTextBox1.AppendText("Price: " + dishSplit[1] + "\n");
+                richTextBox1.AppendText("Calories: " + dishSplit[2] + "\n");
+                richTextBox1.AppendText("Meal Type: " + dishSplit[3] + "\n");
+                richTextBox1.AppendText("Allergens: " + dishSplit[4] + "\n");
+                richTextBox1.AppendText("Additional Info: " + dishSplit[5] + "\n");
             }
         }
 
