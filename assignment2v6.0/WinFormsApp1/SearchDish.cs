@@ -46,9 +46,13 @@ namespace assignment2
                     dishInfo = File.ReadAllLines(dishSearch.Text + ".txt").ToList();
                     foreach (var line in dishInfo)
                     {
-                        string[] dishSplit = line.Split(',');
-                        string[] dishSplits = line.Split(',');
-                        richTextBox1.AppendText(dishSplit[0] + "\n");
+                        string[] custSplit = line.Split(',');
+                        richTextBox1.AppendText("Dish: " + custSplit[0] + "\n");
+                        richTextBox1.AppendText("Price: " + custSplit[1] + "\n");
+                        richTextBox1.AppendText("Calories: " + custSplit[2] + "\n");
+                        richTextBox1.AppendText("Meal Type: " + custSplit[3] + "\n");
+                        richTextBox1.AppendText("Allergens: " + custSplit[4] + "\n");
+                        richTextBox1.AppendText("Additional Info: " + custSplit[5] + "\n");
                     }
                 }
                 

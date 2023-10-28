@@ -64,9 +64,14 @@ namespace assignment2
             richTextBox1.Clear();
             var fileLocation = File.ReadAllLines("customerDB.txt");
             List<string> lines = new List<string>(fileLocation);
-            for (int i=0; i<lines.Count; i++)
+            List<string> dishInfo = new List<string>();
+            dishInfo = File.ReadAllLines("customerDB.txt").ToList();
+            foreach (var line in dishInfo)
             {
-                richTextBox1.AppendText(lines[i] + "\n");
+                string[] custSplit = line.Split(',');
+                richTextBox1.AppendText("Full Name: " + custSplit[0] + "\n");
+                richTextBox1.AppendText("Username: " + custSplit[1] + "\n" + "\n");
+               
             }
         }
 
